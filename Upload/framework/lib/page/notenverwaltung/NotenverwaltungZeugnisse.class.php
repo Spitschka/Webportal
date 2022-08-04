@@ -212,6 +212,9 @@ class NotenverwaltungZeugnisse extends AbstractPage {
                                             (2 * $gross)
                                           ) / 3;
                                       $klein = $gesamtNote;
+
+                                      $schnittGesamt = $klein;
+
                                       $gross = -1;
                                   }
                               }
@@ -585,7 +588,9 @@ pause\r\n";
                   $upload = FileUpload::getByID($exemplare[$e]['uploadID']);
                   $erzeugt = functions::makeDateFromTimestamp($exemplare[$e]['createdTime']);
 
-                  $schuelerHTML .= "<a href=\"" . $upload->getURLToFile() . "\"><i class=\"fa fa-file-word-o\"></i> Download</a><br />Erzeugt: $erzeugt";
+                  if($upload != null) {
+                      $schuelerHTML .= "<a href=\"" . $upload->getURLToFile() . "\"><i class=\"fa fa-file-word-o\"></i> Download</a><br />Erzeugt: $erzeugt";
+                  }
                   $found = true;
               }
           }
@@ -655,7 +660,7 @@ pause\r\n";
           }
       }
 
-      if(schulinfo::isGymnasium() && $schueler->getKlassenObjekt()->getKlassenstufe() == 10 && $bemerkung->klassenzielErreicht()) {
+      if(schulinfo::isGymnasium() && $schueler->getKlassenObjekt()->getKlassenstufe() == 10 && $bemerkung != null && $bemerkung->klassenzielErreicht()) {
           $bestandenOberstufeMR = "\n" . ($schueler->getGeschlecht() == 'm' ? "Der Schüler" : "Die Schülerin") . " ist damit zum Eintritt in die Qualifikationsphase der Oberstufe des Gymnasiums berechtigt; dies schließt den Nachweis eines mittleren Schulabschlusses ein.";
       }
 
