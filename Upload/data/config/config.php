@@ -12,7 +12,7 @@ class GlobalSettings
      * Schulnummer als String (mit führender Null)
      * @var string
      */
-    public $schulnummer = "0740";
+    public $schulnummer = "0366";
 
     /**
      * Datenbankeinstellungen für diese Installation
@@ -22,15 +22,15 @@ class GlobalSettings
         'host' => 'localhost',
         'port' => 3306,
         'user' => 'root',
-        'password' => 'root',
-        'database' => 'schuleintern_dev'
+        'password' => '',
+        'database' => 'isgyintern'
     );
 
     /**
      * URL zur index.php für diese Installation (SSL!)
      * @var string
      */
-    public $urlToIndexPHP = "http://schuleintern.local/index.php";
+    public $urlToIndexPHP = "https://schuleintern.alchr-dev.de/index.php";
 
     /**
      * Schlüssel zum Ausführen des Cron Jobs.

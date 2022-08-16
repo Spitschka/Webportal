@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f3ad986ac550bed2721b815bd3a57e7",
+    "content-hash": "2cd5a44dd2eb933a61f7efbc0d516924",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -673,6 +673,51 @@
                 "source": "https://github.com/ifsnop/mysqldump-php/tree/master"
             },
             "time": "2020-04-03T14:40:40+00:00"
+        },
+        {
+            "name": "lbuchs/webauthn",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lbuchs/WebAuthn.git",
+                "reference": "eab183a7ddbe763c03ca1199e74bfb7c7762f8db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lbuchs/WebAuthn/zipball/eab183a7ddbe763c03ca1199e74bfb7c7762f8db",
+                "reference": "eab183a7ddbe763c03ca1199e74bfb7c7762f8db",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "lbuchs\\WebAuthn\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lukas Buchs",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple PHP WebAuthn (FIDO2) server library",
+            "homepage": "https://github.com/lbuchs/webauthn",
+            "keywords": [
+                "Authentication",
+                "webauthn"
+            ],
+            "support": {
+                "issues": "https://github.com/lbuchs/WebAuthn/issues",
+                "source": "https://github.com/lbuchs/WebAuthn/tree/v1.1.0"
+            },
+            "time": "2022-05-04T08:20:40+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -1991,5 +2036,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }

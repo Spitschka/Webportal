@@ -40,6 +40,19 @@ class DB {
      */
     private static $activityLog = null;
 
+    /**
+     * WebAuthn
+     * @var \lbuchs\WebAuthn\WebAuthn
+     */
+    private static $webauthn = null;
+
+
+    /**
+     * Ist WebAuthn aktiv?
+     * @var bool
+     */
+    private static $isWebauthnActive = false;
+
 
 
     public static function boo() {
@@ -54,6 +67,10 @@ class DB {
 		self::$settings = new settings();
 		self::$settings->init();
 		self::$cache = new Cache();
+
+        if(self::getSettings()) {
+
+        }
 
 		
 	}

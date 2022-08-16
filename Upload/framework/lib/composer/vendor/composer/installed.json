@@ -696,6 +696,54 @@
             "install-path": "../ifsnop/mysqldump-php"
         },
         {
+            "name": "lbuchs/webauthn",
+            "version": "v1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lbuchs/WebAuthn.git",
+                "reference": "eab183a7ddbe763c03ca1199e74bfb7c7762f8db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lbuchs/WebAuthn/zipball/eab183a7ddbe763c03ca1199e74bfb7c7762f8db",
+                "reference": "eab183a7ddbe763c03ca1199e74bfb7c7762f8db",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "time": "2022-05-04T08:20:40+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "lbuchs\\WebAuthn\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lukas Buchs",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple PHP WebAuthn (FIDO2) server library",
+            "homepage": "https://github.com/lbuchs/webauthn",
+            "keywords": [
+                "Authentication",
+                "webauthn"
+            ],
+            "support": {
+                "issues": "https://github.com/lbuchs/WebAuthn/issues",
+                "source": "https://github.com/lbuchs/WebAuthn/tree/v1.1.0"
+            },
+            "install-path": "../lbuchs/webauthn"
+        },
+        {
             "name": "league/oauth2-client",
             "version": "2.6.1",
             "version_normalized": "2.6.1.0",
