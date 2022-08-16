@@ -2,7 +2,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="{$this->userImage}" class="user-image" alt="User Image">
-              <span class="hidden-xs">$displayName 
+              <span class="hidden-xs"><strong>$displayName</strong>
               
               <if(DB::getSession()->is2FactorActive())><then><i class="fa fa-lock"></i></then></if>
                             
@@ -48,23 +48,27 @@
 
 
                   <div class="col-xs-6">
-                    <a href="index.php?page=userprofilesettings" class="btn btn-app btn-block"><i class="fa fa-cogs"></i>Seiteneinstellungen</a>
+                    <a href="index.php?page=userprofilesettings" class="btn btn-app btn-block"><i class="fa fa-cogs"></i>Optionen</a>
                   </div>
                   
                   <div class="col-xs-6">
-                  	<a href="index.php?page=userprofile" class="btn btn-app btn-block"><i class="fa fa-user"></i>Benutzerprofil</a>
+                  	<a href="index.php?page=userprofile" class="btn btn-app btn-block"><i class="fa fa-user"></i>Profil</a>
                   
                   </div>
                 </div>
 
+                <div class="row">
+                  <div class="col-xs-12">
+                  </div>
+                </div>
 
                 <div class="row">
                   <div class="col-xs-6">
-                	<a href="#"onclick="javascript:location.reload()" class="btn btn-app btn-block"><i class="fa fas fa-sync-alt"></i>Neu Laden</a>
+                	<a href="#" onclick="javascript:location.reload()" class="btn btn-app btn-block"><i class="fa fas fa-sync-alt"></i>Neu Laden</a>
                   </div>
                   
                   <div class="col-xs-6">
-                  <a href="index.php?page=logout" class="btn btn-app btn-block"><i class="fa fa-sign-out-alt"></i>Logout</a>
+                  <a href="index.php?page=logout" class="btn btn-app btn-block"><i class="fa fa-sign-out-alt"></i>Abmelden</a>
                   
                   </div>
                 </div>
