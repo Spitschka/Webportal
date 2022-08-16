@@ -43,16 +43,12 @@ class requesthandler {
     'json' => [
         'jsonApi'
     ],
-    /*'allinklmail' => [
-        'AllInkMail'
-    ],*/
     'absenzen' => [
       'absenzenberichte',
       'absenzenlehrer',
       'absenzensekretariat',
       'absenzenstatistik',
-      'absenzenschueler',
-        'AbsenzenMain'
+      'absenzenschueler'
     ],
   	'messages' => [
   		'MessageInbox',

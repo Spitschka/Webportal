@@ -16,19 +16,30 @@
             </div>
            <div class="box-body">
 
-<form action="index.php?page=userprofileuserimage&save=1" method="post" enctype="multipart/form-data">
+                <form action="index.php?page=userprofileuserimage&save=1" method="post" enctype="multipart/form-data">
 
-<if($showImage != "")><then>
-{$showImage}
-</then><else>
-<div class="callout callout-info">Derzeit ist kein Bild hochgeladen.</div></else></if>
+                <if($showImage != "")><then>
+                    {$showImage}
+                </then><else>
+                    <div class="callout callout-info"><i class="fa fa-image"></i> Derzeit ist kein Bild hochgeladen.</div>
+                </else></if>
 
 
-<input name="userImage" type="file" size="50" accept="image/*" class="form-control"> </td>
-<button type="submit" class="form-control"><i class="fa fa-upload"></i> Bild hochladen</button>
-<small>Datenschutz: Das Bild dient nur dazu hier auf der Seite ein Foto zur Verschönerung anzuzeigen. Das Bild wird nicht anderweitig verwendet.</small>
+                <p>
+                    <input name="userImage" type="file" size="50" accept="image/*" class="form-control">
+                </p>
 
-</div></div>
+                <p>
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-upload"></i> Bild hochladen</button>
+                </p>
+
+                <p>
+                    <small>Datenschutz: Das Bild dient nur dazu hier auf der Seite ein Foto zur Verschönerung anzuzeigen. Das Bild wird nicht anderweitig verwendet.</small>
+                </p>
+                </form>
+
+           </div>
+        </div>
 
 </form>
 {$this->footer}
